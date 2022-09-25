@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Create Profile</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="assets/bootstrap.min.css">
+      <link rel=icon href=images/ClapSSL/logo-sl.png sizes="16x16" type="image/jpef">
+      <link rel="stylesheet" href="assets/style.css">
+      <link rel="stylesheet" href="assets/w3.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="assets/jquery-3.6.min.js"></script>
+      <script src="assets/bootstrap.min.js"></script>
+      <style></style>
+   </head>
+   <body id="myPage">
+      <div>
+         <div class="container-fluid">
+            <div class="flex-sb btn-margin-lr">
+               <a class="navbar-brand" href="index.html"><img src="images/main-logo.png" alt="Clapp SSL" class="logo-img-style">
+               </a>   
+               <a href="login.html"><button class="nav-menu-btn">LOG IN</button></a>
+               </div>
+         </div>
+      <!--header-->
+      <section id="create-profile">
+         <div class="container-fluid w3-padding-48-top">
+            <h2 class="cp-heading">Create a Profile</h2>
+            <div class="row w3-padding-25-top">
+               <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6">
+                  <div class="tab">
+                     <button class="tablinks" onclick="openProfile(event, 'individual')" id="defaultOpen">Individual</button>
+                     <button class="tablinks" onclick="openProfile(event, 'agency')">Agency</button>
+                  </div>
+                  <div id="individual" class="tabcontent">
+                     <div class="row w3-padding-36-top mySlides">
+                        <div class="col-md-12">
+                           <div class="row">
+                              <div class="col-sm-6 form-group">
+                                 <label>Fist Name</label>
+                                 <input class="cp-input-form" id="name" name="fn" placeholder="" type="text" required>
+                              </div>
+                              <div class="col-sm-6 form-group">
+                                 <label>Last Name</label>
+                                 <input class="cp-input-form" id="name" name="ln" placeholder="" type="text" required>
+                              </div>
+                              <div class="col-sm-12 form-group">
+                                 <label>Email</label>
+                                 <input class="cp-input-form" id="name" name="email" placeholder="" type="text" required>
+                              </div>
+                              <div class="col-sm-6 form-group">
+                                 <label>Password </label><span class="tooltip-st">i
+                                    <span class="tooltiptext">Tooltip text here</span>
+                                  </span>
+                                 <input class="cp-input-form" id="name" name="pass" placeholder="" type="text" required>
+                              </div>
+                              <div class="col-sm-6 form-group">
+                                 <label>Confirm Password</label>
+                                 <input class="cp-input-form" id="name" name="c_pass" placeholder="" type="text" required>
+                              </div>
+                           </div>
+                           <div class="w3-padding-36-top">
+                              <label class="cb-container checkbox">I agree to Dolat.com's <a href="#" class="w3-theme-text">privacy policy</a> and <a href="#" class="w3-theme-text">terms of services.</a>
+                              <input type="checkbox" checked="checked">
+                              <span class="checkmark"></span>
+                              </label>
+                           </div>
+                           <div class="w3-padding-cp-tb w3-center">
+                              <button class="create-p-btn w3-ripple"> CREATE YOUR PROFILE</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div id="agency" class="tabcontent">
+                     <div class="mySlidess">
+                        <div class="row w3-padding-36-top">
+                           <div class="col-md-12">
+                              <div class="row">
+                                 <div class="col-sm-6 form-group">
+                                    <label>Company Name</label><span class="tooltip-st">i
+                                       <span class="tooltiptext">Tooltip text casddsa</span>
+                                     </span>
+                                    <input class="cp-input-form" id="name" name="cn" placeholder="" type="text" required>
+                                 </div>
+                                 <div class="col-sm-6 form-group">
+                                    <label>Company Telephone</label><span class="tooltip-st">i
+                                       <span class="tooltiptext">Tooltip text casddsa</span>
+                                     </span>
+                                    <input class="cp-input-form" id="name" name="ct" placeholder="" type="text" required>
+                                 </div>
+                                 <div class="col-sm-12 form-group">
+                                    <label>Compnay Email</label><span class="tooltip-st">i
+                                       <span class="tooltiptext">Tooltip text casddsa</span>
+                                     </span>
+                                    <input class="cp-input-form" id="name" name="ce" placeholder="" type="text" required>
+                                 </div>
+                                 <div class="col-sm-12 form-group">
+                                    <label>Compnay Website</label><span class="tooltip-st">i
+                                       <span class="tooltiptext">Tooltip text casddsa</span>
+                                     </span>
+                                    <input class="cp-input-form" id="name" name="cw" placeholder="" type="text" required>
+                                 </div>
+                                 <div class="col-sm-6 form-group">
+                                    <label>Company Postcode</label><span class="tooltip-st">i
+                                       <span class="tooltiptext">Tooltip text casddsa</span>
+                                     </span>
+                                    <input class="cp-input-form" id="name" name="cpc" placeholder="" type="text" required>
+                                 </div>
+                                 <div class="col-sm-6 form-group">
+                                    <label>Company Reg Code</label><span class="tooltip-st">i
+                                       <span class="tooltiptext">Tooltip text casddsa</span>
+                                     </span>
+                                    <input class="cp-input-form" id="name" name="crc" placeholder="" type="text" required>
+                                 </div>
+                              </div>
+                              <div class="w3-padding-cp-tb w3-center">
+                                 <button class="create-p-btn w3-ripple" onclick="plusDivs(1)"> CREATE YOUR PROFILE 1/2</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!--slide-two-->
+                     <div class="mySlidess">
+                        <div class="row w3-padding-36-top">
+                          <div class="col-md-12">
+                            <div class="row">
+                               <div class="col-sm-6 form-group">
+                                  <label>Fist Name</label>
+                                  <input class="cp-input-form" id="name" name="fn" placeholder="" type="text" required>
+                               </div>
+                               <div class="col-sm-6 form-group">
+                                  <label>Last Name</label>
+                                  <input class="cp-input-form" id="name" name="ln" placeholder="" type="text" required>
+                               </div>
+                               <div class="col-sm-6 form-group">
+                                  <label>Password</label><span class="tooltip-st">i
+                                    <span class="tooltiptext">Tooltip text casddsa</span>
+                                  </span>
+                                  <input class="cp-input-form" id="name" name="pass" placeholder="" type="text" required>
+                               </div>
+                               <div class="col-sm-6 form-group">
+                                  <label>Confirm Password</label>
+                                  <input class="cp-input-form" id="name" name="c_pass" placeholder="" type="text" required>
+                               </div>
+                               <div class="col-sm-6 form-group">
+                                <label>Position Held</label><span class="tooltip-st ">i
+                                 <span class="tooltiptext">Tooltip text casddsa</span>
+                               </span>
+                                <select class="cp-input-form" id="sel1">
+                                  <option>1</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                </select>
+                             </div>
+                            </div>
+                            <div class="w3-padding-36-top">
+                              <label class="cb-container checkbox">Please confirm that you're authorized to act on behalf of company.</span>
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                                </label>
+                               <label class="cb-container checkbox">I agree to Dolat.com's <a href="#" class="w3-theme-text">privacy policy</a> and <a href="#"  class="w3-theme-text">terms of services.</a>
+                               <input type="checkbox" checked="checked">
+                               <span class="checkmark"></span>
+                               </label>
+                            </div>
+                            <div class="w3-padding-cp-tb">
+                            <div class="w3-center flex-sb">
+                              <button class="create-p-btn-back w3-ripple" onclick="plusDivs(-1)">Back</button>
+                               <button class="create-p-btn-next w3-ripple"> CREATE YOUR PROFILE 2/2</button>
+                            </div>
+                           </div>
+                         </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6 ">
+                    <img src="images/create-profile.png" class="cp-img w3-hide-small w3-hide-medium w3-right w3-padding-right">
+               </div>
+            </div>
+         </div>
+      </section>
+   </div>
+        
+      <script src="assets/javascript.js"></script>
+   </body>
+</html>

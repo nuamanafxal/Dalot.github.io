@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>my-notifications</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="stylesheet" href="assets/bootstrap.min.css" />
+      <link rel=icon href=images/ClapSSL/logo-sl.png sizes="16x16"
+         type="image/jpef">
+      <link rel="stylesheet" href="assets/style.css" />
+      <link rel="stylesheet" href="assets/w3.css" />
+      <link rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+      <script src="assets/jquery-3.6.min.js"></script><script src="assets/bootstrap.min.js"></script>
+   </head>
+   <body id="myPage">
+      <nav class="navbar navbar-default" id="navbar">
+         <div class="container-fluid">
+            <div class="navbar-header"><button type="button"
+               class="navbar-toggle"
+               data-toggle="collapse"
+               data-target="#myNavbar">
+               <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="index.html"><img src="images/main-logo.png" alt="" class="logo-img-style" /></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+               <ul class="nav navbar-nav navbar-right">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="#">Properties </a></li>
+                  <li><a href="#">Agents </a></li>
+                  <li><a href="#">List Property </a></li>
+                  <li class="dropdown">
+                     <a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="images/user.png" class="user-img" />Zuhran <span class="caret margin-t-10"></span></a>
+                     <ul class="dropdown-menu">
+                        <li><a href="index.html"><i class="fa fa-sign-out"></i>LOG OUT</a></li>
+                      </ul>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <!--header--><br><br>
+      <!--body-->
+      <section id="my-notifications">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-lg-4 col-sm-12 col-md-12 col-xs-12 w3-margin-bottom-25">
+                <div class="w3-bar-block border-15">
+                    <div class="profile-det w3-padding-24">
+                       <img src="images/db-user.png" class="img-responsive mlr-auto"><br>
+                        <h2 class="ra-h-24 font-22">X BUILDERS</h2>
+                        <div class="r-s">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="theme-light-gray font-18 font-12-sm p-l-5"> <span class="font-16">(20 reviews)</span></span>
+                        </div>
+                        <h2 class="font-16 ff-lagufa-n l-h">Registered since March 2022</h2>
+                    </div>
+                    <a href="my-ads.html" class="w3-bar-item"><span class="icon home-icon w3-margin-right"></span> <span class="icon"> My Ads</span></a>
+                    <a href="my-notification.html" class="w3-bar-item active-sidebar"><span class="icon notification-icon-active w3-margin-right"></span><span class="icon">Notifications</span></a>
+                    <a href="my-property-list.html" class="w3-bar-item"><span class="icon list-property-icon w3-margin-right"></span><span class="icon">List Property</span></a>
+                    <a href="my-promoting-list.html" class="w3-bar-item"><span class="icon promoting-icon w3-margin-right"></span><span class="icon">Promotion</span></a>
+                    <a href="my-tenancy-management.html" class="w3-bar-item"><span class="icon ten-mang-icon w3-margin-right"></span><span class="icon">Tenancy Management</span></a>
+                    <a href="my-setting.html" class="w3-bar-item"><span class="icon setting-icon w3-margin-right"></span><span class="icon">Settings</span></a>
+                    <a href="my-help-support.html" class="w3-bar-item"><span class="icon help-sup-icon w3-margin-right"></span><span class="icon">Help & Support</span></a>
+                  </div>
+               </div>
+               <div class="col-lg-8 col-sm-12 col-md-12 col-xs-12">
+                  <div class="today">
+                  <h2 class="notf-h">Today</h2>
+                  <div class="notify_item1 notif-bg-d">
+                     <div class="notify_img flex-con-sb">
+                        <img src="images/l-tick.png" alt="profile_pic" class="img-responsive">
+                        <div class="notify_info">
+                           <p><span class="font-w-600 w3-text-black">Your listing (ID: 153086)</span> has been aprroved and live now on Dolat.com</p>
+                           <span class="notify_time">10 minutes ago</span>
+                        </div>
+                     </div>
+                     <div class="notify_edit">
+                        <img src="images/more-circle.svg" alt="profile_pic" class="more-img"  onclick="document.getElementById('notif-modal').style.display='block'">
+                     </div>
+                  </div>
+                  <div class="notify_item1 notif-bg-d">
+                     <div class="notify_img flex-con-sb">
+                        <img src="images/l-cross.png" alt="profile_pic" class="img-responsive">
+                        <div class="notify_info">
+                           <p><span class="font-w-600 w3-text-black">Your listing (ID: 153086)</span> has been aprroved and live now on Dolat.com</p>
+                           <span class="notify_time">10 minutes ago</span>
+                        </div>
+                     </div>
+                     <div class="notify_edit">
+                        <img src="images/more-circle.svg" alt="profile_pic" class="more-img"  onclick="document.getElementById('notif-modal').style.display='block'">
+                     </div>
+                  </div>
+                  <div class="notify_item1 notif-bg-d">
+                     <div class="notify_img flex-con-sb">
+                        <img src="images/l-time.png" alt="profile_pic" class="img-responsive">
+                        <div class="notify_info">
+                           <p><span class="font-w-600 w3-text-black">Your listing (ID: 153086)</span> has been aprroved and live now on Dolat.com</p>
+                           <span class="notify_time">10 minutes ago</span>
+                        </div>
+                     </div>
+                     <div class="notify_edit">
+                        <img src="images/more-circle.svg" alt="profile_pic" class="more-img"  onclick="document.getElementById('notif-modal').style.display='block'">
+                     </div>
+                  </div>
+               </div><!--list2-->
+                  <!--yesterday-->
+                  <div class="yesterday">
+                  <h2 class="notf-h w3-padding-24-top">Yesterday</h2>
+                  <div class="notify_item2 notif-bg-l">
+                     <div class="notify_img flex-con-sb">
+                        <img src="images/l-tick.png" alt="profile_pic" class="img-responsive">
+                        <div class="notify_info notif-bg-l">
+                           <p><span class="font-w-600 w3-text-black">Your listing (ID: 153086)</span> has been aprroved and live now on Dolat.com</p>
+                           <span class="notify_time">10 minutes ago</span>
+                        </div>
+                     </div>
+                     <div class="notify_edit">
+                        <img src="images/more-circle.svg" alt="profile_pic" class="more-img"  onclick="document.getElementById('notif-modal').style.display='block'">
+                     </div>
+                  </div>
+                  <div class="notify_item2 notif-bg-l">
+                     <div class="notify_img flex-con-sb">
+                        <img src="images/l-cross.png" alt="profile_pic" class="img-responsive">
+                        <div class="notify_info">
+                           <p><span class="font-w-600 w3-text-black">Your listing (ID: 153086)</span> has been aprroved and live now on Dolat.com</p>
+                           <span class="notify_time">10 minutes ago</span>
+                        </div>
+                     </div>
+                     <div class="notify_edit notif-bg-l">
+                        <img src="images/more-circle.svg" alt="profile_pic" class="more-img"  onclick="document.getElementById('notif-modal').style.display='block'">
+                     </div>
+                  </div>
+                  <div class="notify_item2 notif-bg-l">
+                     <div class="notify_img flex-con-sb">
+                        <img src="images/l-time.png" alt="profile_pic" class="img-responsive">
+                        <div class="notify_info">
+                           <p><span class="font-w-600 w3-text-black">Your listing (ID: 153086)</span> has been aprroved and live now on Dolat.com</p>
+                           <span class="notify_time">10 minutes ago</span>
+                        </div>
+                     </div>
+                     <div class="notify_edit">
+                        <img src="images/more-circle.svg" alt="profile_pic" class="more-img"  onclick="document.getElementById('notif-modal').style.display='block'">
+                     </div>
+                  </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Modal -->
+      <div id="notif-modal" class="w3-modal">
+         <div class="w3-modal-content w3-animate-zoom w3-card-4">
+           <header class="flex-con-sb panel-header-st">  
+            <h2 class="ra-h-24  font-20 font-16-sm">Provide Feedback</h2>
+           </header>
+           <div class="panel-body-st">
+            <div class="res-col-pads padd-style">
+               <div class="flex-st m-r-25">
+                  <img src="images/fb-user2.png" class="notif-img p-r-10">
+                  <p class="ra-h-24 font-18 font-14-sm p-r-10"> 
+                     Yaroslove K.
+                  </p>
+               </div>
+               <div class="">
+                  <p class="font-16 font-w-400 ff-lagufa-n w3-padding-12-top  w3-text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam ultrices ultrices aliquet elementum. Enim aliquam.
+                  </p>
+               </div>
+            </div>
+            <div class="flex-con-sb res-col-pads padding-10">
+               <div class="flex-con-sb m-r-25">
+                  <p class="ra-h-24 font-18  p-r-10"> 
+                    Service
+                  </p>
+               </div>
+               <div class="r-s">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked-gray"></span>
+                  <span class="fa fa-star checked-gray"></span>
+                  <span class="fa fa-star checked-gray"></span>
+              </div>
+            </div>
+            <div class="flex-con-sb res-col-pads padding-10">
+               <div class="flex-con-sb m-r-25">
+                  <p class="ra-h-24 font-18  p-r-10"> 
+                    Service
+                  </p>
+               </div>
+               <div class="r-s">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked-gray"></span>
+                  <span class="fa fa-star checked-gray"></span>
+                  <span class="fa fa-star checked-gray"></span>
+              </div>
+            </div>
+            <div class="flex-con-sb res-col-pads padding-10">
+               <div class="flex-con-sb m-r-25">
+                  <p class="ra-h-24 font-18  p-r-10"> 
+                    Communication
+                  </p>
+               </div>
+               <div class="r-s">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked-gray"></span>
+                  <span class="fa fa-star checked-gray"></span>
+                  <span class="fa fa-star checked-gray"></span>
+              </div>
+            </div>
+            <div class="w3-padding-12-top">
+               <button class="prom-btn theme-bg btn btn-block">Add Feedback</button>
+               <button class="prom-btn btn-gray btn btn-block" onclick="document.getElementById('notif-modal').style.display='none'">Skip</button>
+            </div>
+           </div> 
+         </div>
+       </div>
+      <!--footer-->
+      <footer class="w3-padding-86-top container-fluid w3-margin-bottom-30">
+         <div class="row w3-padding-32-top">
+            <div class="col-xs-12 col-lg-5 col-md-6 col-sm-12 w3-padding-right-20 w3-margin-bottom-30">
+               <div class="w3-center-logo"><img src="images/main-logo.png" alt="" class="img-responsive" /></div>
+               <div class="w3-padding-32-top">
+                  <p class="footer-p-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+                     fugit similique. Omnis nulla repellendus minus cumque sit blanditiis vel,
+                     nihil eos consectetur maxime similique autem eveniet ullam,
+                     iure,
+                     placeat consequuntur? 
+                  </p>
+               </div>
+               <div class="icon-bar-2 f-h4 w3-padding-32-top"><a href="#" class="facebook"><i class="fa fa-facebook"></i></a><a href="#" class="twitter"><i class="fa fa-twitter"></i></a><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a><a href="#" class="youtube"><i class="fa fa-instagram"></i></a></div>
+               <div class="w3-padding-32-top">
+                  <p class="footer-p-text">© 2022. All rights reserved</p>
+               </div>
+            </div>
+            <div class="col-xs-12 col-lg-2 col-md-6 col-sm-12 w3-margin-bottom-30">
+               <h4 class="w3-padding-2-top footer-h-text">Take a Tour</h4>
+               <div class="w3-padding-32-top">
+                  <p class="footer-p2-text">Basics</p>
+                  <p class="footer-p2-text">Advance Training</p>
+                  <p class="footer-p2-text">Introduction</p>
+                  <p class="footer-p2-text">Resources</p>
+                  <p class="footer-p2-text">Ebooks</p>
+               </div>
+            </div>
+            <div class="col-xs-12 col-lg-2 col-md-6 col-sm-12 w3-margin-bottom-30">
+               <h4 class="w3-padding-2-top footer-h-text">Our Company</h4>
+               <div class="w3-padding-32-top">
+                  <p class="footer-p2-text">E-Book</p>
+                  <p class="footer-p2-text">Free Training</p>
+                  <p class="footer-p2-text">Packs</p>
+                  <p class="footer-p2-text">Pre Launch</p>
+               </div>
+            </div>
+            <div class="col-xs-12 col-lg-3 col-md-6 col-sm-12 w3-margin-bottom-30">
+               <h4 class="w3-padding-2-top footer-h-text">Subscribe</h4>
+               <div class="w3-padding-32-top">
+                  <p class="footer-p-text">Subscribe to get latest property,
+                     blog news from us 
+                  </p>
+               </div>
+               <div class="w3-padding-32-top">
+                  <div class="wrapper">
+                     <div class="box"><input type="text"
+                        name=""
+                        class="email-sub"
+                        placeholder="Email Address"
+                        /><button class="btn-form main-col-bg"><img src="images/arrow-right.png" class="w3-image" /></button></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--row-->
+      </footer>
+      <script src="assets/javascript.js"></script>
+   </body>
+</html>

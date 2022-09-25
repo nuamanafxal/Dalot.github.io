@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Galleries</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="assets/bootstrap.min.css">
+      <link rel=icon href=images/ClapSSL/logo-sl.png sizes="16x16" type="image/jpef">
+      <link rel="stylesheet" href="assets/style.css">
+      <link rel="stylesheet" href="assets/w3.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="assets/jquery-3.6.min.js"></script>
+      <script src="assets/bootstrap.min.js"></script>
+   </head>
+   <body id="myPage">
+      <nav class="gal-navbar">
+         <div class="w3-theme-text font-16 flex-con-sb">
+            <a href="#"><i class="fa fa-arrow-left"></i> <span> &nbsp; Back</span></a>
+            <p class="addr-text w3-text-black font-w-700">Radley Mews, Kensington, London, W8
+               <br> <span class="font-w-400">£1,550,000</span>
+               </p>
+         </div>
+         <div><button class="bor-2 w3-theme-text prom-btn btn">Floor Plan</button></div>
+      </nav>
+      <!-- Sidebar/menu -->
+<div class="w3-sidebar w3-white w3-animate-left g-box-shad" style="z-index:3;width:350px;" id="mySidebar"><br>
+  <div class="gal-navbar" style="border:none" id="gal-nav">
+    <div><i class="fa fa-briefcase"></i> Gallery</div>
+    <div> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id="hide">Hide</a></div>
+  </div> 
+  <div class="g-row"> 
+      <div class="g-column"><img src="images/couch.png" class="g-img demoSlider cursor" onclick="currentSliderSlide(1)"></div>
+      <div class="g-column"><img src="images/detail.png" class="g-img demoSlider cursor" onclick="currentSliderSlide(2)"></div>
+      <div class="g-column"><img src="images/detail1.png" class="g-img demoSlider cursor" onclick="currentSliderSlide(3)"></div>
+      <div class="g-column"><img src="images/detail2.png" class="g-img demoSlider cursor" onclick="currentSliderSlide(4)"></div>
+    </div>         
+</div>
+ <div class="w3-main w3-padding-large" id="main">
+  <div class="gal-btn-pad">
+    <div><button class="bor-2 w3-theme-text prom-btn btn" id="g-btn"><i class="fa fa-briefcase"></i> Gallery</button></div>
+  </div> 
+   <div class="sl-container">
+      <div class="mySliderSlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="images/couch.png" class="sl-img">
+      </div>
+      <div class="mySliderSlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="images/detail.png" class="sl-img">
+      </div>
+      <div class="mySliderSlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="images/detail1.png" class="sl-img">
+      </div>
+      <div class="mySliderSlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="images/detail2.png" class="sl-img">
+      </div>
+      <a class="prev" onclick="plusSliderSlides(-1)">❮</a>
+      <a class="next" onclick="plusSliderSlides(1)">❯</a>
+    </div>
+</div> 
+<!--footer-->
+<script>
+   let sliderIndex = 1;
+   showSliderSlides(sliderIndex);
+   
+   function plusSliderSlides(n) {
+     showSliderSlides(sliderIndex += n);
+   }
+   
+   function currentSliderSlide(n) {
+     showSliderSlides(sliderIndex = n);
+   }
+   
+   function showSliderSlides(n) {
+     let i;
+     let slides = document.getElementsByClassName("mySliderSlides");
+     let dots = document.getElementsByClassName("demoSlider");
+     let captionText = document.getElementById("captionSlider");
+     if (n > slides.length) {sliderIndex = 1}
+     if (n < 1) {sliderIndex = slides.length}
+     for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+     }
+     for (i = 0; i < dots.length; i++) {
+       dots[i].className = dots[i].className.replace(" sl-active", "");
+     }
+     slides[sliderIndex-1].style.display = "block";
+     dots[sliderIndex-1].className += " sl-active";
+     
+   }
+   </script>
+   <script>
+    function openNav() {
+      const mySidebar=document.getElementById("mySidebar");
+      mySidebar.style.width = "350px";
+      const main= document.getElementById("main");
+      main.style.marginLeft = "350px";
+    }
+    
+    function closeNav() {
+      const mySidebar=document.getElementById("mySidebar");
+      mySidebar.style.width = "0";
+      const main= document.getElementById("main");
+      main.style.marginLeft= "0";
+    }
+    </script>
+    <script>
+      const closeBtn=document.getElementById('hide');
+      closeBtn.addEventListener("click", showGal);
+      function showGal(){
+        document.getElementById('g-btn').style.display="block";
+      }
+      const gBtn=document.getElementById('g-btn');
+      gBtn.addEventListener("click",openNav);
+      gBtn.addEventListener("click", hideGBtn)
+      function hideGBtn(){document.getElementById('g-btn').style.display = "none";}
+    </script>
+      <script src="assets/javascript.js"></script>      
+   </body>
+</html>

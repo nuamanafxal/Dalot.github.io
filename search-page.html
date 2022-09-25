@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Search Page</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="stylesheet" href="assets/bootstrap.min.css" />
+      <link rel=icon href=images/ClapSSL/logo-sl.png sizes="16x16"
+         type="image/jpef">
+      <link rel="stylesheet" href="assets/style.css" />
+      <link rel="stylesheet" href="assets/w3.css" />
+      <link rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+      <script src="assets/jquery-3.6.min.js"></script><script src="assets/bootstrap.min.js"></script>
+   </head>
+   <body id="myPage">
+      <nav class="navbar navbar-default" id="navbar">
+         <div class="container-fluid">
+            <div class="navbar-header"><button type="button"
+               class="navbar-toggle"
+               data-toggle="collapse"
+               data-target="#myNavbar">
+               <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="index.html"><img src="images/main-logo.png" alt="" class="logo-img-style" /></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+               <ul class="nav navbar-nav navbar-right">
+                  <li><a href="my-ads.html">Dashboard </a></li>
+                  <li><a href="#">Properties </a></li>
+                  <li><a href="#">Agents </a></li>
+                  <li><a href="#">List Property </a></li>
+                  <li class="dropdown">
+                     <a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="images/user.png" class="user-img" />Zuhran  <span class="caret margin-t-10"></span></a>
+                     <ul class="dropdown-menu">
+                        <li><a href="index.html"><i class="fa fa-sign-out"></i>LOG OUT</a></li>
+                      </ul>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <!--header-->
+      <div class="container-fluid DN-800" id="search-page">
+         <div class="sp-backdrop-bg sp-border">
+            <div class="flex-stretch">
+               <div class="f-g-2" style="width:200px">
+                  <div class="flex-st">
+                     <p class="margin-right"><img src="images/location-icon.png" class="loc-img"/></p>
+                     <p class="font-lufga-18 dis-none margin-right theme-text-col">Manchester city</p>
+                  </div>
+               </div>
+               <div class="f-g-1 margin-right">
+                  <div class="vr-line"></div>
+               </div>
+               <div class="f-g-2">
+                  <p class="font-lufga-18 dis-none">Distance</p>
+                  <div class="flex-st">
+                     <div class="dropdown margin-right">
+                        <button class="dropdown-toggle"
+                           type="button"
+                           id="menu1"
+                           data-toggle="dropdown"
+                           >Choose area Radius  
+                        <img src="../Zuhran/images/arrow-down.png"
+                           class="arrow-img"
+                           /></button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                           <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML </a></li>
+                           <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS </a></li>
+                           <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript </a></li>
+                           <li role="presentation" class="divider"></li>
+                           <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us </a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="f-g-1 margin-right">
+                  <div class="vr-line"></div>
+               </div>
+               <div class="f-g-2">
+                  <p class="font-lufga-18 dis-none">Property Type</p>
+                  <div class="flex-st">
+                     <div class="dropdown margin-right">
+                        <button class="dropdown-toggle"
+                           type="button"
+                           id="menu1"
+                           data-toggle="dropdown"
+                           >Choose Property Type
+                        <img src="../Zuhran/images/arrow-down.png"
+                           class="arrow-img"
+                           /></button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                           <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML </a></li>
+                           <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS </a></li>
+                           <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript </a></li>
+                           <li role="presentation" class="divider"></li>
+                           <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us </a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="f-g-1 margin-right">
+                  <div class="vr-line"></div>
+               </div>
+               <div class="f-g-2">
+                  <p class="font-lufga-18 dis-none">Bedrooms</p>
+                  <div class="flex-st">
+                     <div class="dropdown margin-right">
+                        <button class="dropdown-toggle"
+                           type="button"
+                           id="menu1"
+                           data-toggle="dropdown"
+                           >Choose Bedrooms Range 
+                        <img src="../Zuhran/images/arrow-down.png"
+                           class="arrow-img"
+                           /></button>
+                        <ul class="d-c dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="menu1" id="bedroom-dr-mn">
+                           <div class="w3-row-padding">
+                              <div class="w3-col l6">
+                                 <select class="sd-input-form" id="sel">
+                                    <option>Minimum Beds</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                 </select>
+                              </div>
+                              <div class="w3-col l6">
+                                 <select class="sd-input-form" id="sel">
+                                    <option>Minimum Beds</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                 </select>
+                              </div>
+                           </div>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="f-g-1 margin-right">
+                  <div class="vr-line"></div>
+               </div>
+               <div class="f-g-2">
+                  <p class="font-lufga-18 dis-none">Price Range</p>
+                  <div class="flex-st">
+                     <div class="dropdown margin-right">
+                        <button class="dropdown-toggle"
+                           type="button"
+                           id="menu1"
+                           data-toggle="dropdown"
+                           >Choose Price Range
+                        <img src="../Zuhran/images/arrow-down.png"
+                           class="arrow-img"
+                           /></button>
+                        <ul class="d-c dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="menu1" id="price-dr-mn">
+                           <div class="w3-row-padding">
+                              <div class="w3-col l6">
+                                 <select class="sd-input-form" id="sel">
+                                    <option>Minimum Price</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                 </select>
+                              </div>
+                              <div class="w3-col l6">
+                                 <select class="sd-input-form" id="sel">
+                                    <option>Minimum Price</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                 </select>
+                              </div>
+                           </div>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="f-g-1 margin-right">
+                  <div class="vr-line"></div>
+               </div>
+               <div class="f-g-2"><img src="../Zuhran/images/more-circle.png" class="img-responsive cursor-on"  onclick="document.getElementById('id01').style.display='block'">
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--for small screen-->
+      <div class="container-fluid DN2-800">
+         <div class="backdrop-bg w3-light-gray">
+            <div class="flex-row">
+               <div class="column-sp">
+                  <div class="flex-sb">
+                     <div class="sc-w-80"><input type="text" class="w3-cus-input" placeholder="London"></div>
+                     <div class="margin-right"><a href="search-page.html" class="search-icon-btn"><i class="fa fa-search"></i></a></div>
+                  </div>
+               </div>
+               <div class="column-sp">
+                  <div class="vr-line"></div>
+               </div>
+               <div class="column-sp">
+                  <p class="font-w-700 w3-theme-text margin-right f-t">Filter</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--body-->
+      <section id="search-content">
+         <div class="container-fluid">
+            <div class="w3-padding-40-top"><button class="w3-theme-text prom-btn btn bor-3 font-14-sm"><img src="images/bell.png" class="bell-img">&nbsp; CREATE ALERT</button></div>
+            <div class="w3-padding-32-top flex-con-sb f-d-col">
+               <p class="font-18 ff-lagufa-n font-w-400">1074 Listing for Rent in London</p>
+               <div class="flex-con-sb">
+                  <div class="flex-con-sb m-r-25">
+                     <img src="images/list.png" class="img-responsive p-r-5">
+                     <p class="font-18 ff-lagufa-n font-w-400"> 
+                        List view
+                     </p>
+                  </div>
+                  <div class="flex-con-sb">
+                     <img src="images/sort.png" class="img-responsive p-r-5">
+                     <p class="font-18 ff-lagufa-n font-w-400"> 
+                        Best Match
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--search-->
+      <section id="search-listing" class="w3-text-black bg-gray w3-padding-25-top">
+         <div class="container-fluid">
+            <div class="hp-card-sl">
+               <div class="row">
+                  <div class="col-sm-12 col-xs-12 col-md-5 col-lg-4 w3-margin-bottom-25-sm">
+                     <div class="w3-white">
+                        <img class=" w3-detail-image w3-border-radius-10" src="images/pool.png"><img class="mySlides w3-detail-image w3-border-radius-10" src="images/couch.png" style="display:none">
+                        <div class="w3-row-padding" style="margin:10px -10px 0px -10px!important">
+                           <div class="w3-col s6"><img class="w3-detail-silde-img w3-border-radius-10" src="images/pool.png" onclick="currentDiv(1)"></div>
+                           <div class="w3-col s6"><img class=" w3-detail-silde-img w3-border-radius-10" src="images/couch.png" onclick="currentDiv(2)"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-12 col-xs-12 col-md-7 col-lg-8">
+                     <div class="w3-padding-8">
+                        <div class="flex-sb">
+                           <div class="flex-sb-sm">
+                              <span class="sp-h-24">2 Bedroom house for sale</span>
+                              <span class="btn feature-link">Featured</span>
+                           </div>
+                           <img src="images/heart.png" class="img-responsive w-80 w3-hide-small">
+                        </div>
+                        <p class="sp-text theme-light-gray">Stanton road london </p>
+                        <p class="sp-desc ff-lagufa-n desc-sett font-18 w3-padding-16">Nomi Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available. It is also used to... See more </p>
+                     </div>
+                     <div class="row">
+                        <div class="col-sm-12 col-md-7 w3-margin-bottom-25-sm">
+                           <div class="flex-sb">
+                              <p class="ra-bp-18">2 x Bedroom </p>
+                              <p class="ra-bp-18">1 x Bathroom </p>
+                              <p class="ra-bp-18">1 x Reception </p>
+                           </div>
+                        </div>
+                        <div class="col-sm-12 col-md-5">
+                           <div class="flex-end">
+                              <p class="ra-h-24">$ 1,
+                                 500 pcm 
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                     <p class="font-16 theme-light-gray w3-hide-small w3-padding-12-top">Added on 1/4/22</p>
+                     <hr>
+                     <div class="flex-sb f-d-col-sm">
+                        <div class="">
+                           <div class="flex-st">
+                              <div class=""><img src="images/f-w.png" class="f-w-img"></div>
+                              <div class="p-l-20">
+                                 <p class="theme-light-gray font-18 font-12-sm">Post by X builder (Agency) 
+                                 </p>
+                              </div>
+                              <div class="p-l-10"><img src="images/tick-circle.png" class="tick-circle"></div>
+                           </div>
+                        </div>
+                        <div class=" p-t-4 w3-hide-small">
+                           <p class="t-col-y font-18 p-lr-30 ">
+                              <i class="fa fa-star t-col-y"></i> 5.0 <span class="theme-light-gray font-18"> (4)</span>
+                           </p>
+                        </div>
+                        <div class="">
+                           <div class="res-see-more">
+                              <a href="detail-page.html"><button class="sp-btn theme-bg btn">See More</button></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <br>
+            <div class="padding-40-lr">
+               <div class="banner-bg w3-padding-40-tb">
+                  <h2 class="w3-center w3-text-white ff-lagufa-n font-40">BANNER ADD</h2>
+               </div>
+            </div>
+            <br>
+            <div class="hp-card-sl">
+               <div class="row">
+                  <div class="col-sm-12 col-xs-12 col-md-5 col-lg-4 w3-margin-bottom-25-sm">
+                     <div class="w3-white">
+                        <img class="mySlides w3-detail-image w3-border-radius-10" src="images/pool.png"><img class="mySlides w3-detail-image w3-border-radius-10" src="images/couch.png" style="display:none">
+                        <div class="w3-row-padding" style="margin:10px -10px 0px -10px!important">
+                           <div class="w3-col s6"><img class="demo w3-detail-silde-img w3-border-radius-10" src="images/pool.png" onclick="currentDiv(1)"></div>
+                           <div class="w3-col s6"><img class="demo  w3-detail-silde-img w3-border-radius-10" src="images/couch.png" onclick="currentDiv(2)"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-12 col-xs-12 col-md-7 col-lg-8">
+                     <div class="w3-padding-8">
+                        <div class="flex-sb">
+                           <div class="flex-sb-sm">
+                              <span class="sp-h-24">2 Bedroom house for sale</span>
+                              <span class="btn feature-link">Featured</span>
+                           </div>
+                           <img src="images/heart.png" class="img-responsive w-80 w3-hide-small">
+                        </div>
+                        <p class="sp-text theme-light-gray">Stanton road london </p>
+                        <p class="sp-desc ff-lagufa-n desc-sett font-18 w3-padding-16">Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available. It is also used to... See more </p>
+                     </div>
+                     <div class="row">
+                        <div class="col-sm-12 col-md-7 w3-margin-bottom-25-sm">
+                           <div class="flex-sb">
+                              <p class="ra-bp-18">2 x Bedroom </p>
+                              <p class="ra-bp-18">1 x Bathroom </p>
+                              <p class="ra-bp-18">1 x Reception </p>
+                           </div>
+                        </div>
+                        <div class="col-sm-12 col-md-5">
+                           <div class="flex-end">
+                              <p class="ra-h-24">$ 1,
+                                 500 pcm 
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                     <p class="font-16 theme-light-gray w3-hide-small w3-padding-12-top">Added on 1/4/22</p>
+                     <hr>
+                     <div class="flex-sb f-d-col-sm">
+                        <div class="">
+                           <div class="flex-st">
+                              <div class=""><img src="images/f-w.png" class="f-w-img"></div>
+                              <div class="p-l-20">
+                                 <p class="theme-light-gray font-18 font-12-sm">Post by X builder (Agency) 
+                                 </p>
+                              </div>
+                              <div class="p-l-10"><img src="images/tick-circle.png" class="tick-circle"></div>
+                           </div>
+                        </div>
+                        <div class=" p-t-4 w3-hide-small">
+                           <p class="t-col-y font-18 p-lr-30 ">
+                              <i class="fa fa-star t-col-y"></i> 5.0 <span class="theme-light-gray font-18"> (4)</span>
+                           </p>
+                        </div>
+                        <div class="">
+                           <div class="res-see-more">
+                              <a href="detail-page.html"><button class="sp-btn theme-bg btn">See More</button></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <br>
+            <div class="center">
+               <div class="pagination">
+                  <a href="#">Previuos</a>
+                  <a href="#">1</a>
+                  <a href="#" class="active">2</a>
+                  <a href="#">3</a>
+                  <a href="#">Next</a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--footer-->
+      <footer class="w3-padding-86-top container-fluid w3-margin-bottom-30">
+         <div class="row w3-padding-32-top">
+            <div class="col-xs-12 col-lg-5 col-md-6 col-sm-12 w3-padding-right-20 w3-margin-bottom-30">
+               <div class="w3-center-logo"><img src="images/main-logo.png" alt="" class="img-responsive" /></div>
+               <div class="w3-padding-32-top">
+                  <p class="footer-p-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+                     fugit similique. Omnis nulla repellendus minus cumque sit blanditiis vel,
+                     nihil eos consectetur maxime similique autem eveniet ullam,
+                     iure,
+                     placeat consequuntur? 
+                  </p>
+               </div>
+               <div class="icon-bar-2 f-h4 w3-padding-32-top"><a href="#" class="facebook"><i class="fa fa-facebook"></i></a><a href="#" class="twitter"><i class="fa fa-twitter"></i></a><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a><a href="#" class="youtube"><i class="fa fa-instagram"></i></a></div>
+               <div class="w3-padding-32-top">
+                  <p class="footer-p-text">© 2022. All rights reserved</p>
+               </div>
+            </div>
+            <div class="col-xs-12 col-lg-2 col-md-6 col-sm-12 w3-margin-bottom-30">
+               <h4 class="w3-padding-2-top footer-h-text">Take a Tour</h4>
+               <div class="w3-padding-32-top">
+                  <p class="footer-p2-text">Basics</p>
+                  <p class="footer-p2-text">Advance Training</p>
+                  <p class="footer-p2-text">Introduction</p>
+                  <p class="footer-p2-text">Resources</p>
+                  <p class="footer-p2-text">Ebooks</p>
+               </div>
+            </div>
+            <div class="col-xs-12 col-lg-2 col-md-6 col-sm-12 w3-margin-bottom-30">
+               <h4 class="w3-padding-2-top footer-h-text">Our Company</h4>
+               <div class="w3-padding-32-top">
+                  <p class="footer-p2-text">E-Book</p>
+                  <p class="footer-p2-text">Free Training</p>
+                  <p class="footer-p2-text">Packs</p>
+                  <p class="footer-p2-text">Pre Launch</p>
+               </div>
+            </div>
+            <div class="col-xs-12 col-lg-3 col-md-6 col-sm-12 w3-margin-bottom-30">
+               <h4 class="w3-padding-2-top footer-h-text">Subscribe</h4>
+               <div class="w3-padding-32-top">
+                  <p class="footer-p-text">Subscribe to get latest property,
+                     blog news from us 
+                  </p>
+               </div>
+               <div class="w3-padding-32-top">
+                  <div class="wrapper">
+                     <div class="box"><input type="text"
+                        name=""
+                        class="email-sub"
+                        placeholder="Email Address"
+                        /><button class="btn-form main-col-bg"><img src="images/arrow-right.png" class="w3-image" /></button></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--row-->
+      </footer>
+      <!--modal for filter-->
+       <div id="id01" class="w3-modal">
+         <div class="w3-modal-content w3-animate-top w3-card-4">
+           <header class="flex-con-sb panel-header-st"> 
+            <img src="images/close-circle.png" class="close-circle" onclick="document.getElementById('id01').style.display='none'">
+             <h2 class="ra-h-24  font-20 font-16-sm">Filter Your Results</h2>
+             <a href="#" class="ra-h-24  font-18 w3-theme-text font-14-sm">Reset</a>
+           </header><hr>
+           <div class="panel-body-st">
+            <button class="accordion-panel">Letting Type</button>
+               <div class="acc-panel-body">
+                  <div class="panel-bc-st mw-500">
+                    <div class="row">
+                     <div class="col-xs-6 col-sm-6"> 
+                        <label class="cb-container checkbox">Short Lets
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        </label>
+                     </div>
+                     <div class="col-xs-6 col-sm-6">
+                           <label class="cb-container checkbox">Bill Included
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                           </label>
+                     </div>
+                     <div class="col-xs-6 col-sm-6">
+                        <label class="cb-container checkbox">Pets Allowed
+                           <input type="checkbox">
+                           <span class="checkmark"></span>
+                        </label>
+                     </div>
+                  <div class="col-xs-6 col-sm-6">
+                     <label class="cb-container checkbox">Shared Accomodation
+                        <input type="checkbox" checked>
+                        <span class="checkmark"></span>
+                     </label>
+                  </div>
+                    </div>
+                  </div>
+               </div>
+               <button class="accordion-panel">Advertiser</button>
+               <div class="acc-panel-body">
+                  <div class="panel-bc-st mw-500">
+                     <div class="row">
+                        <div class="col-xs-6 col-sm-6"> 
+                           <label class="cb-container checkbox">Private 
+                           <input type="checkbox" checked>
+                           <span class="checkmark"></span>
+                           </label>
+                        </div>
+                        <div class="col-xs-6 col-sm-6">
+                              <label class="cb-container checkbox">Agency
+                                 <input type="checkbox">
+                                 <span class="checkmark"></span>
+                              </label>
+                        </div>
+                       </div>
+                     </div>
+                </div>
+               <button class="accordion-panel">Availability</button>
+               <div class="acc-panel-body">
+                  <div class="panel-bc-st mw-500">
+                     <div class="row">
+                        <div class="col-xs-6 col-sm-6"> 
+                           <label class="cb-container checkbox">Availability anytime
+                           <input type="checkbox" checked>
+                           <span class="checkmark"></span>
+                           </label>
+                        </div>
+                        <div class="col-xs-6 col-sm-6">
+                              <label class="cb-container checkbox">Immediately
+                                 <input type="checkbox">
+                                 <span class="checkmark"></span>
+                              </label>
+                        </div>
+                        <div class="col-xs-6 col-sm-6">
+                           <label class="cb-container checkbox">Within 1 month
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                           </label>
+                        </div>
+                     <div class="col-xs-6 col-sm-6">
+                        <label class="cb-container checkbox">Within 3 months
+                           <input type="checkbox">
+                           <span class="checkmark"></span>
+                        </label>
+                     </div>
+                     <div class="col-xs-6 col-sm-6">
+                        <label class="cb-container checkbox">Within 6 months
+                           <input type="checkbox" >
+                           <span class="checkmark"></span>
+                        </label>
+                     </div>
+                     <div class="col-xs-6 col-sm-6">
+                        <label class="cb-container checkbox">Within 1 year
+                           <input type="checkbox" >
+                           <span class="checkmark"></span>
+                        </label>
+                     </div>
+                       </div>
+                  </div>
+               </div>
+               <button class="accordion-panel">Furnishing</button>
+               <div class="acc-panel-body">
+                  <div class="panel-bc-st mw-500">
+                     <div class="row">
+                        <div class="col-xs-6 col-sm-6"> 
+                           <label class="cb-container checkbox">Any 
+                           <input type="checkbox" checked>
+                           <span class="checkmark"></span>
+                           </label>
+                        </div>
+                        <div class="col-xs-6 col-sm-6">
+                              <label class="cb-container checkbox">Furnished
+                                 <input type="checkbox">
+                                 <span class="checkmark"></span>
+                              </label>
+                        </div>
+                        <div class="col-xs-6 col-sm-6">
+                           <label class="cb-container checkbox">Part furnished
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                           </label>
+                        </div>
+                     <div class="col-xs-6 col-sm-6">
+                        <label class="cb-container checkbox">Unfurnished
+                           <input type="checkbox">
+                           <span class="checkmark"></span>
+                        </label>
+                     </div>
+                       </div>
+                  </div>
+                  </div>
+               <button class="accordion-panel">Features</button>
+               <div class="acc-panel-body">
+                  <div class="panel-bc-st mw-500">
+                     <div class="row">
+                        <div class="col-xs-6 col-sm-6"> 
+                           <label class="cb-container checkbox">Garden 
+                           <input type="checkbox" checked>
+                           <span class="checkmark"></span>
+                           </label>
+                        </div>
+                        <div class="col-xs-6 col-sm-6">
+                              <label class="cb-container checkbox">Parking garage
+                                 <input type="checkbox">
+                                 <span class="checkmark"></span>
+                              </label>
+                        </div>
+                        <div class="col-xs-6 col-sm-6">
+                           <label class="cb-container checkbox">Balcony / terrace
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                           </label>
+                        </div>
+                       </div>
+                  </div>
+               </div>
+               <button class="accordion-panel">Keywords</button>
+               <div class="acc-panel-body">
+                  <div class="panel-bc-st mw-500">
+                     <div class="row">
+                        <div class="col-sm-12">
+                           <input type="text" class="d-input-form" id="text" placeholder="e.g conservatory or 'double garage'" name="text">
+                        </div>
+                     </div>
+                  </div>
+                  </div>
+           </div> 
+         </div>
+       </div>
+     </div>
+      <script src="assets/javascript.js">
+      </script>
+      <script>
+      var acc = document.getElementsByClassName("accordion-panel");
+var i;
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("acc-active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+      </script>
+      <script>$(document).on('click', '.d-c', function (e) {
+         e.stopPropagation();
+       });</script>
+   </body>
+</html>
